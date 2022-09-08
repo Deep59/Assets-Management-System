@@ -1,0 +1,940 @@
+
+/* template-color */
+
+.scroll-top{
+  background: #39cabb;
+}
+
+.header-top .info li a:hover{
+  color: #39cabb !important;
+}
+
+.bg-color-1{
+	background-color: #b7e9e1;
+}
+
+.header-top .info li.language .language-dropdown{
+	background: #453f85;
+	border-top: 2px solid #39cabb;
+}
+
+.header-top .info li.language .language-dropdown li a:hover{
+  color: #39cabb;
+}
+
+.theme-btn-one{
+	background: #39cabb;
+}
+
+.theme-btn-one:before{
+	background: #453f85;
+}
+
+.theme-btn-one:hover{
+	background: #453f85;
+}
+
+.main-header .logo-box .bg-color{
+	background: #453f85;
+}
+
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li:hover > a{
+  color: #39cabb;
+}
+
+.main-menu .navigation > li > ul > li > a:hover,
+.main-menu .navigation > li > .megamenu li > a:hover{
+	color: #39cabb;
+}
+
+.main-menu .navigation > li > ul > li > ul > li > a:hover{
+  color: #39cabb;
+}
+
+.select-box label span:before{
+	background-color: #39cabb;
+}
+
+.select-box input[type="radio"]:checked + label span{
+  border-color: #39cabb;
+}
+
+.banner-section .content-box form .form-group button{
+	background: #39cabb;
+}
+
+.main-menu .navigation > li > a:before{
+	background: #39cabb;
+}
+
+.bg-color-2{
+	background-color: #453f85;
+}
+
+.feature-block-one .inner-box h3{
+	color: #39cabb;
+}
+
+.feature-block:first-child .feature-block-one .inner-box h3{
+	color: #fe5948;
+}
+
+.feature-block:nth-child(3) .feature-block-one .inner-box h3{
+  	color: #ffab01;
+}
+
+.feature-block:nth-child(4) .feature-block-one .inner-box h3{
+  	color: #01b4d9;
+}
+
+.feature-block-one .inner-box .link a{
+	color: #39cabb;
+}
+
+.image_block_1 .image-box .pattern .pattern-2{
+	background: #39cabb;
+}
+
+.sec-title p{
+	color: #39cabb;
+}
+
+.list-style-one li:before{
+	border: 3px solid #39cabb;
+}
+
+.processing-block-one .inner-box h3 a:hover{
+  color: #39cabb;
+}
+
+.processing-block-one .inner-box:after{
+	background: #39cabb;
+}
+
+.processing-block:nth-child(2) .processing-block-one .inner-box:after{
+	background: #fe5948;
+}
+
+.nav-style-one .owl-prev:hover,
+.nav-style-one .owl-next:hover{
+  background: #39cabb;
+}
+
+.team-block-one .inner-box .content-box{
+	position: relative;
+}
+
+.team-block-one .inner-box .content-box .like-box a{
+	color: #39cabb;
+}
+
+.team-block-one .inner-box .content-box .like-box a:hover{
+  background: #39cabb;
+}
+
+.team-block-one .inner-box .content-box .name-box li h3 a:hover{
+  color: #39cabb;
+}
+
+.team-block-one .inner-box .content-box .name-box li:nth-child(2){
+	color: #39cabb;
+}
+
+.team-block-one .inner-box .content-box .name-box li:last-child{
+  color: #ffae0a;
+}
+
+.team-block-one .inner-box .content-box .rating li{
+	color: #ffab01;
+}
+
+.team-block-one .inner-box .content-box .rating li a:hover{
+  color: #39cabb;
+}
+
+.team-block-one .inner-box .content-box .link a{
+	color: #39cabb;
+}
+
+.team-block-one .inner-box .content-box .link.not-available a{
+  color: #fe5948;
+}
+
+.doctors-block-one .inner-box .doctors-list li a:hover{
+  color: #39cabb;
+}
+
+.doctors-block-one .inner-box .link a{
+	color: #39cabb;
+}
+
+.content_block_2 .content-box .btn-box .download-btn.app-store{
+  background: #39cabb;
+}
+
+.content_block_2 .content-box .btn-box .download-btn.play-store{
+	background: #fe5948;
+}
+
+.news-block-one .inner-box .image-box:before{
+	background: #39cabb;
+}
+
+.news-block-one .inner-box .image-box .category{
+	background: #fe5948;
+}
+
+.news-block-one .inner-box .lower-content h3 a:hover{
+  color: #39cabb;
+}
+
+.news-block-one .inner-box .lower-content .post-info li a:hover{
+  color: #39cabb;
+}
+
+.news-block-one .inner-box .lower-content .link a{
+	color: #39cabb;
+}
+
+.news-block:nth-child(2) .news-block-one .inner-box .image-box .category{
+	background: #01b4d9;
+}
+
+.news-block:nth-child(3) .news-block-one .inner-box .image-box .category{
+  background: #ffab01;
+}
+
+.content_block_3 .content-box .support-box .icon-box{
+	color: #39cabb;
+}
+
+.content_block_3 .content-box .support-box .icon-box:before{
+	background: #39cabb;
+}
+
+.content_block_3 .content-box .support-box h3 a{
+	color: #39cabb;
+}
+
+.content_block_4 .content-box .subscribe-form .form-group input:focus{
+	border-color: #39cabb !important;
+}
+
+.content_block_3 .content-box:before,
+.content_block_4 .content-box:before{
+	background: #39cabb;
+}
+
+.footer-top .links-widget .links li a:hover{
+  color: #39cabb;
+}
+
+.footer-top .links-widget .links li a:before{
+	background: #39cabb;
+}
+
+.footer-top .contact-widget .widget-content li a:hover{
+  color: #39cabb;
+}
+
+.footer-top .contact-widget .widget-content li i{
+	color: #39cabb;
+}
+
+.footer-bottom .copyright p a:hover{
+  color: #39cabb;
+}
+
+.footer-bottom .footer-nav li a:hover{
+  color: #39cabb;
+}
+
+.main-header.style-two .header-top .top-left li a:hover{
+  color: #39cabb;
+}
+
+.main-header.style-two .header-top .top-left li i{
+	color: #39cabb;
+}
+
+.banner-section.style-two .bg-layer:before{
+	background: #39cabb;
+}
+
+.about-section .image_block_2 .image-box .image-content h4{
+	color: #fe5948;
+}
+
+.image_block_2 .image-box .pattern .pattern-3{
+	background: #39cabb;
+}
+
+.content_block_4 .content-box .subscribe-form .form-group button:hover{
+  color: #39cabb !important;
+}
+
+.processing-block-two .inner-box h3 a:hover{
+  color: #39cabb;
+}
+
+.team-block-two .inner-box .image-box:before{
+	background: #39cabb;
+}
+
+.team-block-two .inner-box .image-box a{
+	color: #39cabb;
+}
+
+.team-block-two .inner-box .lower-content h3 a:hover{
+  color: #39cabb;
+}
+
+.team-block-two .inner-box .lower-content .rating li{
+	color: #ffab01;
+}
+
+.team-block-two .inner-box .lower-content .rating li a:hover{
+  color: #39cabb;
+}
+
+.banner-section.style-three:before{
+	background: #3a347a;
+}
+
+.category-block-one .inner-box h3 a:hover{
+  color: #39cabb;
+}
+
+.category-block-one .inner-box .link a{
+	color: #39cabb;
+}
+
+.image_block_2 .image-box .image-content h4{
+	color: #fe5948;
+}
+
+.image_block_3 .image-box .image-content h4{
+	color: #fe5948;
+}
+
+.image_block_3 .image-box .pattern .pattern-3{
+	background: #38c8ba;
+}
+
+.team-block-three .inner-box .image-box a{
+	color: #39cabb;
+}
+
+.team-block-three .inner-box .image-box:before{
+	background: #39cabb;
+}
+
+.team-block-three .inner-box .lower-content .name-box li:nth-child(2){
+  color: #39cabb;
+}
+
+.team-block-three .inner-box .lower-content .name-box li:last-child{
+  color: #ffae0a;
+}
+
+.team-block-three .inner-box .lower-content .name-box li{
+	color: #ffab01;
+}
+
+.team-block-three .inner-box .lower-content .name-box li h3 a:hover{
+	color: #39cabb;
+}
+
+.team-block-three .inner-box .lower-content .rating li a:hover{
+	color: #39cabb;
+}
+
+.team-block-three .inner-box .lower-content .rating li{
+	color: #ffab01;
+}
+
+.team-block-three .inner-box .lower-content .lower-box .text{
+	color: #01b4d9;
+}
+
+.team-block-three .inner-box .lower-content .lower-box a{
+	color: #39cabb;
+}
+
+.team-block-three .inner-box .lower-content .lower-box a:hover{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+.team-block-three .inner-box .lower-content .lower-box .text.not-available{
+  color: #fe5948;
+}
+
+.team-style-three:before{
+	background: #453f85;
+}
+
+.testimonial-style-two .owl-theme .owl-dots .owl-dot.active span,
+.testimonial-style-two .owl-theme .owl-dots .owl-dot span:hover{
+	border-color: #39cabb;
+	background: #39cabb;
+}
+
+.banner-section.style-four .image-box .anim-icon .icon-4{
+	background: #39cabb;
+}
+
+.banner-section.style-five .content-inner .doctors-box h3 a:hover{
+  color: #39cabb;
+}
+
+.banner-section.style-five .content-inner .doctors-box .info li a:hover{
+  color: #39cabb;
+}
+
+.banner-section.style-five .content-inner .doctors-box .info li i{
+	color: #39cabb;
+}
+
+.banner-section.style-five .content-box{
+	background: #3a347a;
+}
+
+.counter-block-one .inner-box .count-outer{
+	color: #39cabb;
+}
+
+.content_block_5 .content-box .sec-title h3{
+	color: #01b4d9;
+}
+
+.faq-page-section .categories-list li:before{
+	background: #39cabb;
+}
+
+.questions-section .form-inner form .form-group input:focus,
+.questions-section .form-inner form .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.pricing-block-one .pricing-table .table-header h3{
+	color: #39cabb;
+}
+
+.pricing-block-one .pricing-table .table-content ul li:before{
+	color: #39cabb;
+}
+
+.pricing-block-one .pricing-table .table-footer .link a{
+	color: #39cabb;
+}
+
+.pricing-section .tab-btn-box .tab-btns:before{
+	background: #39cabb;
+}
+
+.pricing-section .tab-btn-box .tab-btns li.active-btn{
+  color: #39cabb;
+}
+
+.error-section .inner-box h1{
+	color: #39cabb;
+}
+
+.select-field .content-box form .form-group button{
+	background: #39cabb;
+}
+
+.clinic-section .item-shorting .right-column .menu-box button.on{
+  background: #39cabb;
+  border-color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .like-box a{
+	color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .like-box a:hover{
+	background: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .name-box li:nth-child(2){
+	color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .name-box li:last-child{
+  color: #ffab01;
+}
+
+.clinic-block-one .inner-box .content-box .rating li{
+	color: #ffab01;
+}
+
+.clinic-block-one .inner-box .content-box .rating li a:hover{
+	color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .link a{
+	color: #01b4d9;
+}
+
+.clinic-block-one .inner-box .content-box .btn-box a{
+	color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .btn-box a:hover{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .name-box li h3 a:hover{
+	color: #39cabb;
+}
+
+.pagination li a:hover,
+.pagination li a.current{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li i{
+	color: #39cabb;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li a:hover{
+  color: #39cabb;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .view-map a{
+	color: #01b4d9;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .share-box a.share-btn{
+	color: #39cabb;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .share-box a.share-btn:hover{
+  background: #39cabb;
+}
+
+.clinic-details-content .tabs-box .tab-btn-box{
+	background: #453f85;
+}
+
+.clinic-details-content .tabs-box .tab-btn-box .tab-btns li.active-btn{
+  color: #39cabb;
+}
+
+.clinic-details-content .tabs-box .location-box .location-info li a:hover{
+  color: #39cabb;
+}
+
+.clinic-details-content .tabs-box .location-box .location-info li i{
+	color: #39cabb;
+}
+
+.clinic-sidebar .form-widget .form-title{
+	background: #453f85;
+}
+
+.clinic-sidebar .form-widget .form-inner .form-group input:focus,
+.clinic-sidebar .form-widget .form-inner .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.clinic-sidebar .info-widget .info-title{
+	background: #453f85;
+}
+
+.clinic-sidebar .info-widget .info-inner .info-list li p a:hover{
+  color: #453f85;
+}
+
+.clinic-sidebar .info-widget .social-box .social-links li a:hover{
+  border-color: #39cabb;
+  background: #39cabb;
+}
+
+.profile-box .upper-box .profile-image{
+	background: #453f85;
+}
+
+.profile-box .profile-info .list li a.current,
+.profile-box .profile-info .list li a:hover{
+  color: #39cabb;
+}
+
+.profile-box .profile-info .list li a.current i,
+.profile-box .profile-info .list li a:hover i{
+	color: #39cabb;
+}
+
+.profile-box .profile-info .list li span{
+	background: #39cabb;
+}
+
+.feature-block-two .inner-box .icon-box{
+	color: #39cabb;
+}
+
+.theme-btn-two{
+	color: #39cabb;
+}
+
+.theme-btn-two:hover{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+.doctors-appointment .doctors-table tr td .time{
+	color: #39cabb;
+}
+
+.doctors-appointment .doctors-table tr td .status{
+	color: #39dc86;
+}
+
+.doctors-appointment .doctors-table tr td .status.cancel{
+	color: #fe5948;
+}
+
+.doctors-appointment .doctors-table tr td .status.pending{
+	color: #ffab01;
+}
+
+.doctors-appointment .doctors-table tr td .print{
+	color: #39cabb;
+}
+
+.doctors-appointment .doctors-table tr td .view{
+	color: #01b4d9;
+}
+
+.submit-review .review-box .content-box .title-inner{
+	background: #453f85;
+}
+
+.submit-review .review-box .content-inner .form-inner .form-group input:focus,
+.submit-review .review-box .content-inner .form-inner .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.custom-controls-stacked .description a{
+  color: #39cabb;
+  border-bottom: 1px solid #39cabb;
+}
+
+.custom-check-box .custom-control.material-checkbox .material-control-input:checked ~ .material-control-indicator{
+  background: #39cabb !important;
+  border: 1px solid #39cabb !important;
+}
+
+.appointment-section .title-box{
+	background: #453f85;
+}
+
+.appointment-section .information-form .form-group input:focus,
+.appointment-section .information-form .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.appointment-section .payment-information .form-group input:focus{
+  border-color: #39cabb !important;
+}
+
+.confirm-section .inner-box .content-box .icon-box{
+	border: 1px solid #39cabb;
+	color: #39cabb;
+}
+
+.confirm-section .inner-box .content-box a{
+	color: #39cabb;
+}
+
+.registration-section .content-box .title-box{
+	background: #453f85;
+}
+
+.registration-section .content-box .title-box a{
+	color: #39cabb;
+}
+
+.registration-section .content-box .inner .form-group input:focus{
+  border-color: #39cabb !important;
+}
+
+.registration-section .content-box .inner .social-links li:first-child a{
+	background: #3a559f;
+}
+
+.registration-section .content-box .inner .social-links li:last-child a{
+  background: #dd4b39;
+}
+
+.registration-section .content-box .login-now p a{
+	color: #39cabb;
+}
+
+.clinic-block-one .inner-box .content-box .link.not-available a{
+	color: #fe5948;
+}
+
+.doctor-details-content .tabs-box .tabs-content .inner-box .text .treatments-list li a:hover{
+  color: #39cabb;
+}
+
+.doctor-details-content .tabs-box .tabs-content .review-box .rating-inner .rating-box{
+	background: #453f85;
+}
+
+.doctor-details-content .tabs-box .tabs-content .review-box .rating-inner .rating-box h2{
+	color: #39cabb;
+}
+
+.doctor-details-content .tabs-box .tabs-content .review-box .rating-inner .rating-box .clearfix li{
+	color: #ffab01;
+}
+
+.doctor-details-content .tabs-box .tabs-content .review-box .rating-inner .rating-pregress .porgress-bar:before{
+	background: #39cabb;
+}
+
+.doctor-details-content .tabs-box .tabs-content .review-box .rating-inner .rating-pregress .single-progress .text p i{
+	color: #ffab01;
+}
+
+.single-review-box .rating li{
+	color: #ffab01;
+}
+
+.doctors-sidebar .form-widget .form-title{
+	background: #453f85;
+}
+
+.doctors-appointment .doctors-table tr td .accept{
+	color: #39cabb;
+}
+
+.doctors-appointment .doctors-table tr td .cancel{
+	color: #fe5948;
+}
+
+.doctors-dashboard .right-panel .appointment-list .single-item .inner .info-list li a:hover{
+  color: #39cabb;
+}
+
+.doctors-dashboard .right-panel .appointment-list .single-item .inner .confirm-list li{
+	color: #39cabb;
+}
+
+.doctors-dashboard .right-panel .appointment-list .single-item .inner .confirm-list li:last-child{
+	color: #fe5948;
+}
+
+.my-patients .title-box .search-form input:focus{
+  border-color: #39cabb !important;
+}
+
+.my-patients .title-box .search-form input:focus + button,
+.my-patients .title-box .search-form button:hover{
+  color: #39cabb;
+}
+
+.add-listing .single-box .inner-box .form-group input:focus,
+.add-listing .single-box .inner-box .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.add-listing .single-box .title-box a.menu:hover{
+	border-color: #39cabb;
+	background: #39cabb;
+}
+
+.schedule-timing .title-box .search-form input:focus{
+	border-color: #39cabb !important;
+}
+
+.schedule-timing .title-box .search-form input:focus + button,
+.schedule-timing .title-box .search-form button:hover{
+	color: #39cabb;
+}
+
+.schedule-timing .inner-box .calendar-title{
+	background: #453f85;
+}
+
+.main-header.style-three .author-box .icon-box a:hover{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+.doctors-dashboard .review-list .comment-inner .single-comment-box .comment .rating li{
+	color: #ffab01;
+}
+
+.doctors-dashboard .review-list .comment-inner .single-comment-box .comment .replay-btn:hover{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+.doctors-dashboard .my-profile .single-box .profile-title .upload-photo a{
+	background: #39cabb;
+}
+
+.registration-section .content-box .inner .form-group .forgot-passowrd a:hover{
+  color: #39cabb;
+}
+
+.news-block:nth-child(4) .news-block-one .inner-box .image-box .category{
+	background: #94c74e;
+}
+
+.news-block:nth-child(5) .news-block-one .inner-box .image-box .category{
+	background: #e48e65;
+}
+
+.news-block:nth-child(6) .news-block-one .inner-box .image-box .category{
+	background: #c14ad5;
+}
+
+.news-block:nth-child(7) .news-block-one .inner-box .image-box .category{
+	background: #6691f5;
+}
+
+.news-block:nth-child(8) .news-block-one .inner-box .image-box .category{
+	background: #88c58b;
+}
+
+.news-block:nth-child(9) .news-block-one .inner-box .image-box .category{
+	background: #e89c89;
+}
+
+.news-block:nth-child(10) .news-block-one .inner-box .image-box .category{
+	background: #fe5948;
+}
+
+.news-block:nth-child(11) .news-block-one .inner-box .image-box .category{
+	background: #01b4d9;
+}
+
+.news-block:nth-child(12) .news-block-one .inner-box .image-box .category{
+	background: #ffab01;
+}
+
+.blog-sidebar .sidebar-search .search-form .form-group button{
+	background: #39cabb;
+}
+
+.blog-sidebar .sidebar-search .search-form .form-group input:focus{
+  border-color: #39cabb !important;
+}
+
+.blog-sidebar .category-widget .category-list li a:hover{
+	color: #39cabb;
+}
+
+.blog-sidebar .category-widget .category-list li a:hover:before{
+  border-color: #39cabb;
+}
+
+.blog-sidebar .post-widget .post-inner h5 a:hover{
+  color: #39cabb;
+}
+
+.blog-sidebar .archives-widget .archives-list li a:hover{
+	color: #39cabb;
+}
+
+.blog-sidebar .archives-widget .archives-list li a:hover:before{
+  border-color: #39cabb;
+}
+
+.blog-sidebar .sidebar-tags .tags-list li a:hover{
+	border-color: #39cabb;
+	background: #39cabb;
+}
+
+.blog-details-content blockquote i{
+	background: #39cabb;
+}
+
+.blog-details-content .two-column .text .list li:before{
+	background: #39cabb;
+}
+
+.blog-details-content .post-share-option .social-links li a:hover{
+	background: #39cabb;
+}
+
+.blog-details-content .comment-box .comment .comment-inner .reply-btn:hover{
+  color: #39cabb;
+}
+
+.blog-details-content .comments-form-area .comment-form .form-group input:focus,
+.blog-details-content .comments-form-area .comment-form .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.single-information-block .inner-box p a:hover{
+  color: #39cabb;
+}
+
+.contact-section .default-form .form-group input:focus,
+.contact-section .default-form .form-group textarea:focus{
+  border-color: #39cabb !important;
+}
+
+.monthly-day-wrap .monthly-week:nth-child(2) .monthly-day-pick:last-child:before{
+	background: #594ed0;
+}
+
+.monthly-day-wrap .monthly-week:nth-child(3) .monthly-day-pick:nth-child(2):before{
+	background: #01b4d9;
+}
+
+.monthly-day-wrap .monthly-week:nth-child(4) .monthly-day-pick:nth-child(4):before{
+	background: #fe5948;
+}
+
+.message-box .title-box a.menu:hover {
+  background: #39cabb;
+}
+
+.right-panel .message-box .chat-room .side-title{
+	background: #453f85;
+}
+
+#frame #sidepanel #search input:focus{
+	border-color: #39cabb;
+}
+
+#frame #sidepanel #search input:focus + button,
+#frame #sidepanel #search button:hover{
+	color: #39cabb;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap span.contact-status.online {
+  background: #39cabb;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap span.contact-status.away {
+  background: #ffab01;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap span.contact-status.busy {
+  background: #fe5948;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .hidden-chat{
+	background: #39cabb;
+}
+
+#frame .content .contact-profile .chat-option a:hover{
+	background: #39cabb;
+	border-color: #39cabb;
+}
+
+#frame .content .message-input .wrap button{
+	background: #39cabb;
+}

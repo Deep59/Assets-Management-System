@@ -1,0 +1,148 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+                <div class="row page-titles mx-0">
+            
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <h4 class="card-title"> Search Result </h4>
+
+                                
+                           
+                        </ol>
+                    </div>
+                </div>
+                <br>
+                
+                <td>
+                    <a href="{% url 'RoomSearchpage' %}" class="btn btn-info"><- Back To Search</a>
+                </td>
+
+
+
+
+                <div class="col-xl-16 col-xxl-16 col-lg-16 col-md-16">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body pt-4">
+                                    <div class="table-responsive ">
+                                        
+                                        <table class="table items-table">
+                                            
+                                            <tr>
+                                                <th class="my-0 text-black font-w500 fs-10"></th>
+                                                <th class="my-0 text-black font-w500 fs-10">Asset Name</th>
+                                                <th class="my-0 text-black font-w500 fs-10">Asset Details</th>
+                                                <th class="my-0 text-black font-w500 fs-10">Asset Status</th>
+                                                <th class="my-0 text-black font-w500 fs-10">Asset Room</th>
+                                                <th class="my-0 text-black font-w500 fs-10">Asset SubCategory</th>
+                                               
+                                               
+                                            </tr>
+                                            <tbody>
+                                            {% if key59 %}
+                                            {% for data in key59 %}
+                                                   
+                                            <tr>
+                                                
+                                                
+                                                <td>
+                                                    
+                                                    <div class="media">
+                                                        
+                                                        <div class="media-body">
+                                                            <td>
+                                                                <h4 class="my-0 text-secondary font-w600"><a class="text-black" href="javascript:void(0);">{{data.Assetsname}}</a></h4>
+                                                            </td>
+                                                            
+                                                            <td>
+                                                                <h4 class="my-0 text-secondary font-w600"><a class="text-black" href="javascript:void(0);">{{data.Details}}</a></h4>
+                                                            </td>
+
+                                                            <td>
+                                                                {% if data.status == 0 %} 
+                                                                <span class="badge badge-danger">Not Active</span>
+                                                                
+                                                                {% else %}
+                                                                <span class="badge badge-success">Active</span>
+                                                               
+                                                                {% endif %}
+                                                            </td>
+                                                            
+                                                            <td>
+                                                                <h4 class="my-0 text-secondary font-w600">{{data.Room_No_id.Room_No}}</h4>
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="my-0 text-secondary font-w600">{{data.Assets_SubCategory_id.subcat_Title}}[{{data.Assets_SubCategory_id.Assets_Category.cat_Title}}]</h4>
+                                                            </td>
+                                                           
+                                                            
+        
+                                                            
+                                                            
+        
+                                                           
+                                                            <td>
+                                                                <a href="{% url 'updateassetpage' data.id %}" class="btn btn-info"> Edit</a>
+                                                            </td>
+        
+                                                           
+        
+        
+                                                            <td>
+                                                                <form action="{% url 'deleteasset' id=data.id %}" method="post">
+                                                                    {% csrf_token %}
+                                                                    <input type="hidden" name="id" value="{{data.id}}">
+                                                                    
+                                                                    <button class="btn btn-danger" type="submit">Delete</button>
+                                                                </form>
+                                                            </td>
+        
+        
+        
+                                                           
+        
+                                                           
+        
+        
+        
+                                                           
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                
+                                               
+                                               
+                                                
+                                            </tr>
+                                        {% endfor %}
+                                        {% endif %}	
+                                            </tbody>
+                                            
+                                        </table>
+                                        
+                                        
+                                    </div>
+                                        
+                                </div>
+                            </div>
+
+
+
+
+
+            
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+{% endblock %}

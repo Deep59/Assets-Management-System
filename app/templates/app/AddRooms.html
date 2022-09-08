@@ -1,0 +1,61 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+                <div class="row page-titles mx-0">
+                   
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <div class="me-auto d-none d-lg-block">
+                                <h2 class="text-primary font-w600 mb-0">Add Rooms</h2>
+                            </div>
+                            <!-- <h4 class="card-title">Add Rooms</h4> -->
+                        </ol>
+                    </div>
+                </div>
+					<div class="col-xl-6 col-lg-12">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    
+                                        <form action="{% url 'AddRooms'  %}" method="post" enctype="multipart/form-data" name="addroom" >
+                                            {% csrf_token %}
+                                            
+				    
+
+                                                  <div class="form-row">
+                                                      <div class="form-group col-md-12">
+                                                          <label>Room_No/Room_Name</label>
+                                                          <input type="text" name="Room_No" class="form-control" placeholder="Room No / Room Name" onblur="check_RoomNo();">
+                                                          <td>
+                                                            <span id="error2" style=" color: red;"></span>
+                                                              </td>
+                                                      </div>
+                                                        <div class="form-group col-md-12">
+                                                        <label>Floor</label>
+                                                        <input type="text" name="Floor" class="form-control" placeholder="Floor">
+                                                        </div>
+                                                     
+                                                      
+                                                  </div>
+                                                  <!-- <div class="form-row">
+                                                      <div class="form-group col-md-4">
+                                                          <label>State</label>
+                                                          <select id="inputState" class="form-control">
+                                                              <option selected>Choose...</option>
+                                                              <option>Option 1</option>
+                                                              <option>Option 2</option>
+                                                              <option>Option 3</option>
+                                                          </select>
+                                                      </div> -->
+					    
+                                                      
+                                                
+                                                  
+                                                  <button type="submit" class="btn btn-primary">Save</button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+{% endblock %}

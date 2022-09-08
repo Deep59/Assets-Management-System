@@ -1,0 +1,142 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="row page-titles mx-0">
+            
+    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+        <ol class="breadcrumb">
+            <!-- <h4 class="card-title">Quick Search</h4> -->
+
+            <div class="me-auto d-none d-lg-block">
+                <h2 class="text-primary font-w600 mb-0">Quick Search</h2>
+            </div>
+                
+           
+        </ol>
+    </div>
+</div>
+
+<div class="col-xl-8 col-lg-8">
+    <div class="card">
+
+        <div class="card-body">
+            <div class="basic-form">
+
+
+    <form action="{% url 'Search' %}" method="get" action="search">
+    {% csrf_token %}
+    <div>
+    <!-- <label for="Assets_subCategories"><strong>Choose SubCategory:</strong></label>
+   
+    
+    <select name="Assets_subCategories" id="Assets_subCategories" >
+            
+            {% if key39 %}
+            {% for i in key39 %}
+            <option value="{{i.id}}">{{i.subcat_Title}}</option>
+            {% endfor %}
+            {% endif %}   
+            
+    </select>
+
+    <td>
+
+    </td>
+    <br><br>
+    <br> -->
+
+
+        <h4><strong>Choose Asset SubCategory:</strong></h4>
+          <div>  
+            {% if key39 %}
+            {% for i in key39 %}
+            <li>
+            <input name="Assets_subCategories" type="checkbox" value="{{i.id}}">       {{i.subcat_Title}}
+                </li>
+            {% endfor %}
+            {% endif %} 
+
+        </div>
+
+        <br>
+
+        <h4><strong>Choose Asset Sub-SubCategory:</strong></h4>
+          <div>  
+            {% if key81 %}
+            {% for i in key81 %}
+            <li>
+            <input name="Assets_subsubCategories" type="checkbox" value="{{i.id}}">       {{i.Subsubcat_Title}}
+                </li>
+            {% endfor %}
+            {% endif %} 
+
+        </div>
+
+        <br>
+        
+
+        <h4><strong>Choose Asset Rooms:</strong></h4>
+          <div>  
+            {% if key40 %}
+            {% for i in key40 %}
+            <li>
+            <input name="Assets_roomno" type="checkbox" value="{{i.id}}">       {{i.Room_No}}
+                </li>
+            {% endfor %}
+            {% endif %} 
+
+        </div>
+
+        <br>
+
+        <h4><strong>Choose Asset Status:</strong></h4>
+          <div>  
+            
+
+            </li>
+            <li>
+            <input name="StatusActive" type="checkbox" value="True">    Active   </li>
+                <li>
+            <input name="StatusNotActive" type="checkbox" value="False">     Not Active
+            </li>
+            <li>
+                <input name="" type="checkbox" value="">      Both [Active & Not Active]
+            </li>
+
+             
+
+        </div>
+   
+  
+
+    <!-- <label for="Assets_roomno"><strong>Choose Room No:</strong></label>
+
+
+            <select name="Assets_roomno" id="Assets_roomno" >
+
+            {% if key40 %}
+            {% for i in key40 %}
+            <option value="{{i.id}}">{{i.Room_No}}</option>
+            {% endfor %}
+            {% endif %}   
+
+            </select> -->
+
+            <br><br>
+            
+
+    <input type="submit" class="btn btn-primary" value="Search">
+    </div>
+    <td>
+        <span id="empty" style=" color: red;"></span>
+    </td>
+
+    </form>
+</div>
+        </div></div></div>
+
+
+{% endblock %}

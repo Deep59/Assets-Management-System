@@ -1,0 +1,94 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+                <div class="row page-titles mx-0">
+            
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                           
+                            <div class="me-auto d-none d-lg-block">
+                                <h2 class="text-primary font-w600 mb-0">Add Sub-SubCategory</h2>
+                            </div> 
+                           
+                        </ol>
+                    </div>
+                </div>
+
+		<div class="col-xl-8 col-lg-8">
+                        <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="basic-form">
+				
+            <form action="{% url 'Addsubsubcat' %}" method="post" enctype="multipart/form-data" name="subsubf">
+            {% csrf_token %}
+                                       
+                                       
+                
+
+                                              <div class="form-row">
+                
+                                                  <div class="form-group col-md-12">
+                                                      <label> Sub-Subcategory Title</label>
+                                                      <input type="text" name="subcat_Title" class="form-control" placeholder="Sub-Subcategory Title / Name" onblur="check_subsubcat_Title();" >
+                        <td>
+                    <span id="error5" style=" color: red;"></span>
+                      </td>
+                                                  </div>
+                                                  <!-- <div class="form-group col-md-12">
+                                                      <label>Sub-Subcategory Image</label>
+                                                      <input type="file" name="subimage" class="form-control" placeholder="subcategory image"  >
+                        <td>
+                    <span id="error2" style=" color:red; "></span>
+                      </td>
+                        </div> -->
+                                              
+                        
+                                            
+                                                
+                    <div class="form-group col-md-12">
+                     
+                    <label for="Assets_Categories">Choose Asset Subcategory:</label>
+                    
+                    
+                    
+                    
+                    <select name="Assets_Categories" id="Assets_Categories" >
+
+                        
+                            
+                            {% if key47 %}
+                            {% for i in key47 %}
+                            <option value="{{i.id}}">{{i.subcat_Title}}</option>
+                            {% endfor %}
+                            {% endif %}   
+                    </select>
+                    <td>
+                        <span id="empty" style=" color: red;"></span>
+                    </td>
+
+ 
+                    
+                    
+                 
+                </div>
+                            
+                                              
+                <button type="submit" class="btn btn-primary">Save</button>
+                    
+                </div>
+            </form>
+
+
+                                            
+
+            
+
+            
+                                </div>
+				
+                                    </div>
+                                </div>
+                            </div>
+{% endblock %} 

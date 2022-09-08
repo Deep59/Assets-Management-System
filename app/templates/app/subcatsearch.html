@@ -1,0 +1,69 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="row page-titles mx-0">
+            
+    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+        <ol class="breadcrumb">
+            <h4 class="card-title">Search SubCategory Wise</h4>
+                
+           
+        </ol>
+    </div>
+</div>
+
+<div class="col-xl-8 col-lg-8">
+    <div class="card">
+
+        <div class="card-body">
+            <div class="basic-form">
+
+
+    <form action="{% url 'SubcatSearch' %}" method="get" action="search">
+    {% csrf_token %}
+    <div>
+    <label for="Assets_subCategories"><strong>Choose SubCategory:</strong></label>
+   
+    
+    <select name="Assets_subCategories" id="Assets_subCategories" >
+            
+            {% if key55 %}
+            {% for i in key55 %}
+            <option value="{{i.id}}">{{i.subcat_Title}}</option>
+            {% endfor %}
+            {% endif %}   
+            
+    </select>
+
+    <td>
+
+    </td>
+    <br><br>
+    <br>
+
+    <div class="form-group col-md-12">
+        <label for="status"> Asset Status</label>
+        <select name="asset_Status" id="status">
+        <option value="True">Active</option>
+        <option value="False">NotActive</option>
+        </select>
+           </div>
+
+            <br><br><br>
+            
+
+    <input type="submit" class="btn btn-primary" value="Search">
+    </div>
+    <td>
+        <span id="empty" style=" color: red;"></span>
+    </td>
+
+    </form>
+</div>
+        </div></div></div>
+
+
+{% endblock %}

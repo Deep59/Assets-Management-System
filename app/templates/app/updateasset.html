@@ -1,0 +1,131 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+                <div class="row page-titles mx-0">
+            
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <h4 class="card-title">Update Asset</h4>
+                                
+                           
+                        </ol>
+                    </div>
+                </div>
+
+		<div class="col-xl-8 col-lg-8">
+                        <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    {% if key33 %}
+                                    <form action="{% url 'updateassets' id=key33.id %}" method="post" enctype="multipart/form-data" >
+                                        {% csrf_token %}
+                                       
+                                       
+                
+
+                                              <div class="form-row">
+                
+                                                  <div class="form-group col-md-12">
+                                                      <label> Asset_name</label>
+                                                      <input type="text" name="asset_name" class="form-control" placeholder="Asset name" value="{{key33.Assetsname}}">
+                        <td>
+                    <span id="error" style=" color: red;"></span>
+                      </td>
+                                                  </div>
+                                                  <div class="form-group col-md-12">
+                                                      <label>Asset details </label>
+                                                      <input type="text" name="asset_details" class="form-control" placeholder=" Asset details" value="{{key33.Details}}"  >
+                        <td>
+                    <span id="error2" style=" color:red; "></span>
+                      </td>
+                        </div>
+                          
+                                                    <!-- <div class="form-group col-md-12">
+						
+                                                        <label for="Assets_subCategories">Choose SubCategory:</label>
+                   
+                    
+                    <select name="Assets_subCategories" id="Assets_subCategories" >
+                        <option selected name="Assets_subCategories" id="Assets_subCategories" value="{{key33.Assets_SubCategory_id_id}}">{{key33.Assets_SubCategory_id.subcat_Title}}</option>
+                            {% if key29 %}
+                            {% for i in key29 %}
+                            <option value="{{i.id}}">{{i.subcat_Title}}</option>
+                            {% endfor %}
+                            {% endif %}   
+                             
+                    </select>
+                    <td>
+                        <span id="empty" style=" color: red;"></span>
+                    </td>
+                 
+                       
+                       </div> -->
+
+                       <div class="form-group col-md-12">
+						
+                        <label for="Assets_roomno">Choose Room No:</label>
+
+
+                            <select name="Assets_roomno" id="Assets_roomno" >
+                            <option selected name="Assets_roomno" id="Assets_roomno" value="{{key33.Room_No_id_id}}">{{key33.Room_No_id.Room_No}}</option>
+                            {% if key30 %}
+                            {% for i in key30 %}
+                            
+                            <option value="{{i.id}}">{{i.Room_No}}</option>
+                            {% endfor %}
+                            {% endif %}   
+
+                            </select>
+                            <td>
+                            <span id="empty" style=" color: red;"></span>
+                            </td>
+
+
+                            </div>
+
+
+
+                                                    <div class="form-group col-md-12">
+                                                        <label for="status"> Asset_Status</label>
+                    <select name="asset_Status" id="status"> 
+                
+                    <option value="True" >Working / Active</option>
+                    <option value="False">Not Working / NotActive</option>
+                    </select>
+                       </div>
+
+                      
+                       
+                        
+                                                   
+                
+                                              <!-- <div class="form-row">
+                                                  <div class="form-group col-md-4">
+                                                      <label>State</label>
+                                                      <select id="inputState" class="form-control">
+                                                          <option selected>Choose...</option>
+                                                          <option>Option 1</option>
+                                                          <option>Option 2</option>
+                                                          <option>Option 3</option>
+                                                      </select>
+                                                  </div> -->
+                                                  
+                                            
+                                              
+                                              <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                            </form>
+
+                                            {% endif %}
+
+            
+
+            
+                                </div>
+				
+                                    </div>
+                                </div>
+                            </div>
+{% endblock %}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon779b.eot?ulc4i9');
+  src:  url('../fonts/icomoon779b.eot?ulc4i9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon779b.ttf?ulc4i9') format('truetype'),
+    url('../fonts/icomoon779b.woff?ulc4i9') format('woff'),
+    url('../fonts/icomoon779b.svg?ulc4i9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Arrow-down-3:before {
+  content: "\e900";
+}
+.icon-Arrow-down-4:before {
+  content: "\e901";
+}
+.icon-Arrow-Left:before {
+  content: "\e902";
+}
+.icon-Arrow-Right-2:before {
+  content: "\e903";
+}
+.icon-Arrow-Right-5:before {
+  content: "\e904";
+}
+.icon-Arrow-Right:before {
+  content: "\e905";
+}
+.icon-Arrow-up-3:before {
+  content: "\e906";
+}
+.icon-Attatchment:before {
+  content: "\e907";
+}
+.icon-Bell:before {
+  content: "\e908";
+}
+.icon-Check-mark-1:before {
+  content: "\e909";
+}
+.icon-Check-mark-2:before {
+  content: "\e90a";
+}
+.icon-Circle-point:before {
+  content: "\e90b";
+}
+.icon-Confirm:before {
+  content: "\e90c";
+}
+.icon-Dashboard-1:before {
+  content: "\e90d";
+}
+.icon-Dashboard-2:before {
+  content: "\e90e";
+}
+.icon-Dashboard-3:before {
+  content: "\e90f";
+}
+.icon-Dashboard-5:before {
+  content: "\e910";
+}
+.icon-Dashboard-email-4:before {
+  content: "\e911";
+}
+.icon-Delete:before {
+  content: "\e912";
+}
+.icon-Dot-menu:before {
+  content: "\e913";
+}
+.icon-Grid:before {
+  content: "\e914";
+}
+.icon-image:before {
+  content: "\e915";
+}
+.icon-List:before {
+  content: "\e916";
+}
+.icon-Minus:before {
+  content: "\e917";
+}
+.icon-phone:before {
+  content: "\e918";
+}
+.icon-Plus-2:before {
+  content: "\e919";
+}
+.icon-Search:before {
+  content: "\e91a";
+}
+.icon-Star-2:before {
+  content: "\e91b";
+}
+.icon-Star:before {
+  content: "\e91c";
+}
+.icon-Trust-1:before {
+  content: "\e91d";
+}
+.icon-Trust-2:before {
+  content: "\e91e";
+}
+.icon-Upload:before {
+  content: "\e91f";
+}
+.icon-Video:before {
+  content: "\e920";
+}

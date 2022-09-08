@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from davur.dexignzone.com/xhtml/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Dec 2020 08:21:46 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ASSET MANAGEMENT-  Admin Dashboard</title>
+    <!-- Favicon icon -->
+
+    <link href="{% static '/admin/vendor/jqvmap/css/jqvmap.min.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="{% static '/admin/vendor/chartist/css/chartist.min.css' %}">
+    <link href="{% static '/admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css' %}" rel="stylesheet">
+    <link href="{% static '/admin/css/style.css' %}" rel="stylesheet">
+	<link href="{% static '/admin/../../cdn.lineicons.com/2.0/LineIcons.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static '/admin/images/favicon.ico' %}" type="image/x-icon">
+
+   
+        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 
+        <script>
+
+            function check_Catname(){
+                var cn=document.fom.cat_Title.value;
+                if(cn == "") {  
+                    document.getElementById("error3").innerHTML = "Please Enter Category Name !";  
+                    return false;
+                }  
+                else{
+                    document.getElementById("error3").innerHTML="";
+                } 
+            }
+            function check_Assetname(){
+                var An=document.frm.asset_name.value;
+                if(An == "") {  
+                    document.getElementById("error").innerHTML = "Please Enter Asset Name !";  
+                    return false;
+                }  
+                else{
+                    document.getElementById("error").innerHTML="";
+                } 
+            }
+
+            function check_RoomNo(){
+                var room=document.addroom.Room_No.value;
+                if(room == "") {  
+                    document.getElementById("error2").innerHTML = "Please Enter Room No / Name !";  
+                    return false;
+                }  
+                else{
+                    document.getElementById("error2").innerHTML="";
+                } 
+            }
+
+           
+
+            
+
+            function Validate(){
+                var sub = document.getElementById("Assets_subCategories");
+                if (sub.value == "")
+                {
+                    
+                    document.getElementById("error1").innerHTML = "Please Select SubCategory !";  
+                    //alert("Please Select SubCategory !")
+                    return false; 
+                }
+                return true;
+            }
+
+
+            function check_subcat_Title(){
+                var subc=document.subcatf.subcat_Title.value;
+                if(subc == "") {  
+                    document.getElementById("error4").innerHTML = "Please Enter SubCategory Name !";  
+                    return false;
+                }  
+                else{
+                    document.getElementById("error4").innerHTML="";
+                } 
+            }
+
+            function check_subsubcat_Title(){
+                var subca=document.subsubf.subcat_Title.value;
+                if(subca == "") {  
+                    document.getElementById("error5").innerHTML = "Please Enter Sub-SubCategory Name !";  
+                    return false;
+                }  
+                else{
+                    document.getElementById("error5").innerHTML="";
+                } 
+            }
+
+            
+
+            // function Validate(){
+            //     var ro = document.getElementById("Assets_roomno");
+            //     if (ro.value == "")
+            //     {
+                    
+            //         //document.getElementById("error1").innerHTML = "Please Select SubCategory !";  
+            //         alert("Please Select Room !")
+            //         return false; 
+            //     }
+            //     return true;
+            // }
+    
+        </script>
+
+       
+
+
+
+       <!-- <script>
+            $("#Assets_subCategories").change(function () {
+            var url = $("#frm").attr("data-subsubcat-url");  // get the url of the `load_courses` view
+            var subCategoriesId = $(this).val();  // get the selected programming ID from the HTML input
+
+            $.ajax({                       // initialize an AJAX request
+                url: url,                    // set the url of the request (= localhost:8000/load-courses/)
+                data: {
+                'Assets_subCategories': subCategoriesId       // add the programming id to the GET parameters
+                },
+                success: function (data) {   // `data` is the return of the `load_courses` view function
+                $("#Assets_subsubCategories").html(data);  // replace the contents of the course input with the data that came from the server
+                }
+            });
+
+            });
+        </script> -->
+    
+
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+   
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="{% url 'index' %}" class="brand-logo">
+		<img src="{% static '/admin/images/kssbmlogo.jpg' %}" width="300" height="125" alt=" "> 
+                
+            </a>
+            
+			
+        </div>
+		<!-- <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="mr-auto d-none d-lg-block">
+							<h2 class="text-black font-w600 mb-0"></h2>
+							<h4 class="mb-0">Welcome to Asset Co-Ordinator (Admin) Panel</h4>
+						</div>
+
+                        
+                    </div>
+                </nav>
+            </div>
+        </div> -->
+
+        <div class="header">
+<div class="header-content">
+<nav class="navbar navbar-expand">
+<div class="collapse navbar-collapse justify-content-between">
+<div class="header-left">
+<!-- <div class="search_bar dropdown show">
+<div class="dropdown-menu p-0 m-0 show">
+<form>
+<input class="form-control" type="search" placeholder="Search Here" aria-label="Search">
+</form>
+</div>
+<span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"></path></svg>
+</span>
+</div> -->
+</div>
+<ul class="navbar-nav header-right">
+
+<li class="nav-item dropdown header-profile">
+<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+<div class="header-info">
+
+<span>Hello, <strong>Co-Ordinator</strong></span>
+</div>
+<!-- <img src="https://davur." width="20" alt="" data-pagespeed-url-hash="3874330073" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
+</a>
+
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+
+
+
+
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+		<div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+
+            
+
+            
+                <li><a class="" href="{% url 'index' %}" aria-expanded="false">
+                        <i class="flaticon-381-networking"></i>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li><a class="" href="{% url 'Searchpage' %}" aria-expanded="false">
+                    <i class="flaticon-381-internet"></i>
+                    <span class="nav-text">Search</span>
+                </a>
+                </li>
+
+                <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-internet"></i>
+                    <span class="nav-text">Search</span>
+                                </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{% url 'Searchpage' %}">Quick Search</a></li>
+                    <li><a href="">SubCategory-Wise Assets</a></li>
+                    <li><a href="">Room-Wise Assets</a></li>
+                </ul>
+                </li> -->
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-network"></i>
+                    <span class="nav-text">Category</span>
+                                </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{% url 'category' %}">Add Category</a></li>
+                    <li><a href="{% url 'showcatad' %}">Show Category</a></li>
+                </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-network"></i>
+                    <span class="nav-text">Sub Category</span>
+                                </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{% url 'Subcategorypage'  %}">Add Sub-Category</a></li>
+                    <li><a href="{% url 'showsubcatgory'  %}">Show Sub-Category</a></li>
+                </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-network"></i>
+                    <span class="nav-text">Sub-SubCategory</span>
+                                </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{% url 'SubSubcategorypage'  %}">Add Sub-SubCategory</a></li>
+                    <li><a href="{% url 'showsubsubcatgory'  %}">Show Sub-SubCategory</a></li>
+                </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-networking"></i>
+                    <span class="nav-text">Rooms</span>
+                                </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{% url 'Rooms'  %}">Add Rooms</a></li>
+                    <li><a href="{% url 'showrooms'  %}">Show Rooms</a></li>
+                </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-notepad"></i>
+                    <span class="nav-text">Asset</span>
+                                </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{% url 'addasset'  %}">Add Asset</a></li>
+                    <li><a href="{% url 'showasset' %}">Assets List</a></li>
+                </ul>
+                </li>
+
+
+
+
+
+                <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-381-internet"></i>
+                        <span class="nav-text">Bootstrap</span>
+                    </a> -->
+                    
+
+
+
+		</ul>
+		
+	</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				
+
+                {% block content %}
+
+                {% endblock %}
+
+
+
+
+                    
+
+                    <!-- <form class="navbar-form navbar-left" role="search" method="get" action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" size ="70" name="q" value="{{ request.GET.q }}" placeholder="Search hear...">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form> -->
+                   
+					
+					
+					
+					
+					
+				 
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed Developed By ASSET MANAGEMENT</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end	
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="{% static '/admin/vendor/global/global.min.js' %}"></script>
+	<script src="{% static '/admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js' %}"></script>
+	<script src="{% static '/admin/vendor/chart.js/Chart.bundle.min.js' %}"></script>
+    <script src="{% static '/admin/js/custom.min.js' %}"></script>
+	<script src="{% static '/admin/js/deznav-init.js' %}"></script>
+	
+	<!-- Counter Up -->
+    <script src="{% static '/admin/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static '/admin/vendor/jquery.counterup/jquery.counterup.min.js' %}"></script>	
+		
+	<!-- Apex Chart -->
+	<script src="{% static '/admin/vendor/apexchart/apexchart.js' %}"></script>	
+	
+	<!-- Chart piety plugin files -->
+	<script src="{% static '/admin/vendor/peity/jquery.peity.min.js' %}"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="{% static '/admin/js/dashboard/dashboard-1.js' %}"></script>
+	
+	
+</body>
+
+<!-- Mirrored from davur.dexignzone.com/xhtml/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Dec 2020 08:22:07 GMT -->
+</html>

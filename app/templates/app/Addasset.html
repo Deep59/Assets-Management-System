@@ -1,0 +1,198 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+{% load static %}
+                <div class="row page-titles mx-0">
+            
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <!-- <h4 class="card-title">Add Asset</h4> -->
+                            <a href=""></a>
+                            <div class="me-auto d-none d-lg-block">
+                                <h2 class="text-primary font-w600 mb-0">Add Asset</h2>
+                            </div>
+                                
+                           
+                        </ol>
+                    </div>
+                </div>
+
+
+
+
+
+		<div class="col-xl-8 col-lg-8">
+                        <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="basic-form">
+				
+                                    <form action="{% url 'Addasset' %}" method="post" enctype="multipart/form-data" name="frm" >
+                                        {% csrf_token %}
+                                       
+                                       
+                
+
+                                              <div class="form-row">
+                
+                                                  <div class="form-group col-md-12">
+                                                      <label> Asset Name</label>
+                                                      <input type="text" id="asset_name" name="asset_name" class="form-control" placeholder="Asset name" onblur="check_Assetname();" >
+                                <td>
+                            <span id="error" style=" color: red;"></span>
+                            </td>
+                                                  </div>
+                                                  <div class="form-group col-md-12">
+                                                      <label>Asset Details </label>
+                                                      <input type="text" name="asset_details" class="form-control" placeholder=" Asset details"  >
+                        <td>
+                    <span id="erro" style=" color:red; "></span>
+                      </td>
+                        </div>
+
+                        
+                          
+                                                    <div class="form-group col-md-12">
+						
+                                                        <label for="Assets_subCategories">Choose SubCategory:</label>
+                   
+                    
+                    <select name="Assets_subCategories" id="Assets_subCategories" onblur="check_subcategory();">
+                    <option value="">-- Select SubCategory --</option>
+
+                            {% if key19 %}
+                            {% for i in key19 %}
+                            <option value="{{i.id}}">{{i.subcat_Title}}</option>
+                            {% endfor %}
+                            {% endif %}   
+                             
+                    </select>
+                    <br>
+                    <td>
+                        <span id="error1" style=" color: red;"></span>
+                    </td>
+                 
+                       
+                       </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="Assets_subsubCategories">Choose Sub-SubCategory:</label>
+
+
+                        <select name="Assets_subsubCategories" id="Assets_subsubCategories" >
+                        <option selected="" name="Assets_subsubCategories" value="">-- Select Sub-SubCategory --</option>
+                        {% if key49 %}
+                        {% for i in key49 %}
+                        <option value="{{i.id}}">{{i.Subsubcat_Title}}</option>
+                        {% endfor %}
+                        {% endif %}   
+
+                        </select>
+                        <td>
+                        <span id="empty" style=" color: red;"></span>
+                        </td>
+
+
+                    </div>
+
+
+                        <!-- <div class="form-group col-md-12">
+                            <label for="Assets_subsubCategories">Choose SubCategory:</label>
+
+
+                            <select name="Assets_subsubCategories" id="Assets_subsubCategories" >
+
+                            {% if key49 %}
+                            {% for i in key49 %}
+                            <option value="{{i.id}}">{{i.Subsubcat_Title}}</option>
+                            {% endfor %}
+                            {% endif %}   
+
+                            </select>
+                            <td>
+                            <span id="empty" style=" color: red;"></span>
+                            </td>
+
+
+                        </div>
+
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <script>
+                            $("#AssetssubCategory").change(function () {
+                            var url = $("#assetform").attr("data-cities-url");  // get the url of the `load_cities` view
+                            var countryId = $(this).val();  // get the selected country ID from the HTML input
+
+                            $.ajax({                       // initialize an AJAX request
+                                url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+                                data: {
+                                'Assets_subCategories': Assets_subCategories       // add the country id to the GET parameters
+                                },
+                                success: function (data) {   // `data` is the return of the `load_cities` view function
+                                $("#AssetsSubCategoryid").html(data);  // replace the contents of the city input with the data that came from the server
+                                }
+                            });
+
+                            });
+                        </script> -->
+
+                    <div class="form-group col-md-12">
+						
+                        <label for="Assets_roomno">Choose Room No:</label>
+
+
+                            <select name="Assets_roomno" id="Assets_roomno" >
+                            {% if key15 %}
+                            {% for i in key15 %}
+                            <option value="{{i.id}}">{{i.Room_No}}</option>
+                            {% endfor %}
+                            {% endif %}   
+
+                            </select>
+                            <td>
+                            <span id="empty" style=" color: red;"></span>
+                            </td>
+
+
+                    </div>
+
+
+
+                    <div class="form-group col-md-12">
+                    <label for="status"> Asset Status</label>
+                    <select name="asset_Status" id="status">
+                    <option value="True">Active</option>
+                    <option value="False">NotActive</option>
+                    </select>
+                       </div>
+
+                      
+                       
+                        
+                                                   
+                
+                                              <!-- <div class="form-row">
+                                                  <div class="form-group col-md-4">
+                                                      <label>State</label>
+                                                      <select id="inputState" class="form-control">
+                                                          <option selected>Choose...</option>
+                                                          <option>Option 1</option>
+                                                          <option>Option 2</option>
+                                                          <option>Option 3</option>
+                                                      </select>
+                                                  </div> -->
+                                                  
+                                            
+                                              
+                                              <button type="submit" value="Validate" onclick="return Validate()" class="btn btn-primary">Save</button>
+                                    </div>
+                                            </form>
+
+            
+
+            
+                                </div>
+				
+                                    </div>
+                                </div>
+                            </div>
+{% endblock %}
